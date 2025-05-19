@@ -14,7 +14,7 @@ import java.util.List;
 
 @Component
 public class JwtAuthFilter implements GlobalFilter {
-    private static final List<String> WHITELIST = List.of("/signIn", "/signUp");
+    private static final List<String> WHITELIST = List.of("/signIn", "/signUp", "/questions/random");
     private final JwtUtil jwtUtil;
 
     public JwtAuthFilter(JwtUtil jwtUtil) {
